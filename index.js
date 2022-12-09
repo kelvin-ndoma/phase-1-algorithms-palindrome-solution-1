@@ -1,10 +1,11 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  return word.split("").reverse().join("");
 }
 
 /* 
   Add your pseudocode here
 */
+
 
 /*
   Add written explanation of your solution here
@@ -14,12 +15,15 @@ function isPalindrome(word) {
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
-  console.log("=>", isPalindrome("racecar"));
+  console.log("=>", isPalindrome("a"));
+
 
   console.log("");
 
   console.log("Expecting: false");
-  console.log("=>", isPalindrome("robot"));
+  console.log("=>", isPalindrome("ab"));
+
+  
 }
 
 module.exports = isPalindrome;
